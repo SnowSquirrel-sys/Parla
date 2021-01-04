@@ -1,13 +1,9 @@
-# Parla
-
-//take a look please :D
-
-
+#parla
 
 #include <iostream>
     #include <ctime>
-    using namespace std;
-
+    using namespace std
+    
     void bubbleSort(int* DataBase, int size) { //this is the bubble sort, this one always keep on our program working
         int last, i;
         for (last = size - 1; last > 0; last--)// put in
