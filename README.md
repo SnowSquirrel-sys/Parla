@@ -116,8 +116,7 @@
         int DataBase[50];
         int choice, Newclass, Delclass;
         cin >> choice;
-      
- while (choice != 5)
+        while (choice != 5)
         {
             switch (choice) //this is the switch
             {
@@ -170,3 +169,66 @@
             cin >> choice;
         }
         return 0;
+        
+      
+/*while (choice != 5)
+        {
+            switch (choice) //this is the switch
+            {
+            case add: //add func
+                cout << "Enter the code of the classroom to add:\n";
+                cin >> Newclass;
+                while (Newclass < 10000 || Newclass > 99999)
+                {
+                    cout << "ERROR\n";
+                    cin >> Newclass;
+                }
+                NewClass(DataBase, size, Newclass);
+                break;
+            case delete1: //delete func
+                cout << "Enter the code of the classroom to delete:\n";
+                int DelCode;
+                cin >> DelCode;
+                DelClass(size, DataBase, DelCode); 
+                for (int i = 0; i < size; i++)
+                {
+                    if (*(DataBase + i) != 0)
+                        cout << *(DataBase + i) << ' ';
+                }
+                cout << endl;
+                break;
+            case search: //search func
+                cout << "Enter the code of the classroom to search for:\n";
+                int num;
+                cin >> num;
+                if (SearchClass(DataBase, size, num))
+                    cout << "Found\n";
+                else
+                    cout << "Not found\n";
+                break;
+            case printcode: //print code func
+                cout << "Enter the code of the Machon:\n";
+                int Code;
+                cin >> Code;
+                while (Code < 10 || Code > 99)
+                {
+                    cout << "ERROR\n";
+                    cin >> Code;
+                }
+                PrintCode(Code, DataBase, size);
+                break;
+            case printall: //print all fun - the easy one
+                PrintAll(size, DataBase);
+            }
+            cout << "Enter your next choice:\n"; //and if the user want to use it again this is agian he has other choice
+            cin >> choice;
+        }
+        return 0;*/
+        
+        
+        
+        
+        
+        
+        
+        
